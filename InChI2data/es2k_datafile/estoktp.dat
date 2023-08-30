@@ -1,0 +1,15 @@
+ !blank line!
+ Debug  2
+
+Opt_Reac1
+Opt_Reac1_1
+n1dTau_Reac1
+HL_Reac1
+nSymm_reac1
+nkTP
+
+End
+ 48,4
+ numprocll,numprochl
+ 800MW  1000MW
+ gmemll gmemhl
