@@ -95,59 +95,7 @@ except: # If no InChI is found, the CHEM-KIN format is not computed because it's
 # Define the mol file and convert it into the molecular formula
 mol = Chem.MolFromInchi(inchi)
 molecular_formula = Chem.rdMolDescriptors.CalcMolFormula(mol)
-'''
-# Take the value of DH0f(0 K) either from me_files/reac1_dh0f_0K.me (for HL) or output/reac1_dh0f_0K.out (for level1)
-# The most precise value is taken
-try: # Check if HL estimation is present
-    with open("./me_files/reac1_dh0f_0K.me") as hldh0:
-        line = hldh0.readlines()
-        dh0k =  float(line[0].strip("\n").replace(" ","")) #[kcal/mol]
-except:
-    try: # Check if level1 estimation is present
-        with open("./output/reac1_dh0f_0K.out") as dh0:
-            line = dh0.readlines()
-            dh0k =  float(line[0].strip("\n").replace(" ","")) #[kcal/mol]
-    except: # No ΔH0f(0 K) is found, an error is thrown out
-        os.chdir("thermo")
-        text_error = "Error: no estimated ΔH0f(0 K) present in 'me_files' or 'output', can't compute NASA polynomials"
-        error = open("nasa_polyn.out","w")
-        error.write(text_error)
-        error.close()
-        sys.exit() # Stop the regression process if no ΔH0f(0 K) is found
 
-# Extract the values of Eel and ZPE to correct ΔH0f(0 K) -> ΔH0f(298.15 K)
-try: # The high level has been computed -> We can estimate DH0 at level1 and also at HL
-    with open("./me_files/reac1_en.me") as en:
-        line = en.readlines()
-        line = line[0].strip("\n").replace(" ","")
-        energy = float(line)
-except:
-    try:
-        with open("geoms/reac1_l1.xyz") as en:
-            line = en.readlines()
-            line = line[1].strip("\n").replace(" ","")
-            energy = float(line)
-    except:
-        os.chdir("thermo")
-        text_error = "Error: no electronic energy present in 'me_files' or 'output', can't compute NASA polynomials"
-        error = open("nasa_polyn.out","w")
-        error.write(text_error)
-        error.close()
-        sys.exit() # Stop the regression process if no Eel is found
-
-try:
-    with open("me_files/reac1_zpe.me") as zpe_file:
-        line = zpe_file.readlines()
-        line = line[0].strip("\n").replace(" ","")
-        zpe = float(line)
-except:
-    os.chdir("thermo")
-    text_error = "Error: no zpe present in 'me_files', can't compute NASA polynomials"
-    error = open("nasa_polyn.out","w")
-    error.write(text_error)
-    error.close()
-    sys.close() # Stop the regression process of no zpe is found
-'''
 # Extract the value of ΔH0f(298.15 K) after correction of ΔH0f(0 K)
 
 try:
