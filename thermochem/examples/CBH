@@ -1,0 +1,33 @@
+Estimation of ΔH0f(0 K) with the Connectivity Based Hierarchy method
+Level of theory/Basis set: wb97xd/jun-cc-pvtz
+
+CBH0 rung reaction:
+[CH2]C(C)(C)CC(C)COO + 9 [H][H] --> 7 C + [CH3] + 2 O
+Estimated ΔH0f(0 K) = -0.038863109751558544 [Ha]
+Estimated ΔH0f(0 K) = -24.38695113709075 [kcal/mol]
+
+CBH1 rung reaction:
+[CH2]C(C)(C)CC(C)COO + 7 C + O --> 6 CC + [CH2]C + CO + OO
+Estimated ΔH0f(0 K) = 0.010315152148461543 [Ha]
+Estimated ΔH0f(0 K) = 6.472850809528954 [kcal/mol]
+
+CBH2 rung reaction:
+[CH2]C(C)(C)CC(C)COO + 3 CC + CO --> CCC + CCO + COO + CC(C)C + [CH2]C(C)(C)C
+Estimated ΔH0f(0 K) = -0.01852244035151221 [Ha]
+Estimated ΔH0f(0 K) = -11.622998022537075 [kcal/mol]
+
+Sum of (Electronic energy + ZPE) [CH2]C(C)(C)CC(C)COO: -465.1728424058516 [Ha]
+Reference data:
+              Eel+ZPE [Ha]  ΔH0f(0 K) [Ha]
+C              -40.475078   -0.0253479318
+[CH3]          -39.809241    0.0570832179
+O              -76.418056   -0.1090336996
+CC             -79.757932   -0.0260483698
+[CH2]C         -79.099494    0.0500399886
+CO            -115.683041   -0.0723823978
+OO            -151.538086   -0.0492900362
+CCC           -119.044808   -0.0315063773
+CCO           -154.974498   -0.0827727989
+COO           -190.814923   -0.0437516630
+CC(C)C        -158.334110   -0.0403275536
+[CH2]C(C)(C)C -196.962968    0.0276808511
