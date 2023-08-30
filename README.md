@@ -1,5 +1,5 @@
 # CKThesis
-This repository contains the codes from my M. Sc. thesis in Chemical Engineering in Politecnico di Milano.
+This repository contains the codes from my M. Sc. thesis in Chemical Engineering in Politecnico di Milano (a.y. 2022-2023).
 
 The codes are developed in the context of the program EStokTP, developed by Prof. Carlo Cavallotti (Dep. CMIC Giulio Natta, Politecnico di Milano).
 
