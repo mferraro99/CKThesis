@@ -2,7 +2,6 @@ Reference species file for connectivity based hierarchy construction level 0,1,2
 
 Contains the reference SMILES, the reference energy (electronic plus zero-point) [Ha] and the reference enthalpy of formation ΔH0f(0 K) [Ha]
 The reference energies are obtained from high level simulations using es2k
-The ΔH0f(0 K) are either obtained from the ANL ATcT tables
 
 The code is designed to recognise the keywords 'Heavy', 'CBH0','CBH1",'CBH2' as first word in the row.
 A single blank space must be kept between every list of fragments.
