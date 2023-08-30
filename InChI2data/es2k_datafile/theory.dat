@@ -1,0 +1,19 @@
+level0 g16
+uwb97xd/6-311+g(d,p)  opt=(internal,MaxCycles=50)
+int=ultrafine nosym
+
+level1 g16
+uwb97xd/jun-cc-pvtz   opt=(internal,MaxCycles=50)
+int=ultrafine nosym freq guess=(mix,always)
+
+hind_rotor g09
+b3lyp/6-311+g(d,p)  opt=internal
+int=ultrafine nosym
+
+symmetry g09
+b3lyp/6-311+g(d,p)  opt=internal
+int=ultrafine nosym
+
+hlevel molpro
+
+End
