@@ -8,3 +8,5 @@ The codes are developed in the context of the program EStokTP, developed by Prof
 2) FragsGen: code for the generation of fragmentation products, starting from a InChI identifier (for AVTST application)
 
 3) CHEMTP (Connectivity Hierarchy Estimation Model for Thermochemical Parameters): code for the estimation of thermochemical parameters (cp, S, H and G) in the form of CHEMKIN NASA polynomials, using a CBH approach for H estimation @ 0 K
+
+The thesis and the executive summary are also contained in the present repository.
